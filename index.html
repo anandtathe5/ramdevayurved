@@ -164,6 +164,68 @@
       from {opacity: 0; transform: translateY(50px);}
       to {opacity: 1; transform: translateY(0);}
     }
+
+    /* ------------------ Responsive Design ------------------ */
+    @media (max-width: 1024px) {
+      header {
+        font-size: 28px;
+        padding: 20px 15px;
+      }
+      .intro {
+        font-size: 17px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      header {
+        font-size: 24px;
+      }
+      header p {
+        font-size: 14px;
+      }
+      h2 {
+        font-size: 24px;
+      }
+      .dual-heading {
+        font-size: 18px;
+      }
+      .card h3 {
+        font-size: 18px;
+      }
+      .benefits ul {
+        font-size: 16px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      header {
+        font-size: 20px;
+        padding: 15px;
+      }
+      header p {
+        font-size: 12px;
+      }
+      .intro {
+        font-size: 16px;
+        padding: 10px;
+      }
+      h2 {
+        font-size: 20px;
+      }
+      .dual-heading {
+        font-size: 16px;
+      }
+      .card img {
+        height: 160px;
+      }
+      .card h3 {
+        font-size: 16px;
+      }
+      footer {
+        font-size: 13px;
+        padding: 15px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -187,42 +249,15 @@
 
   <!-- Grid Cards -->
   <div class="grid">
-    <div class="card" onclick="location.href='section1.html'">
-      <img src="sandhivad.jpg" alt="Herbal Oils">
-      <h3>संधिवात (Arthritis)</h3>
-    </div>
-    <div class="card" onclick="location.href='section2.html'">
-      <img src="manka gap.jpg" alt="Ayurvedic Pills">
-      <h3>मणका गॅप (Spinal Issues)</h3>
-    </div>
-    <div class="card" onclick="location.href='section3.html'">
-      <img src="sujanwad.jpg" alt="Herbal Powders">
-      <h3>सुजनवात (Swelling & Pain)</h3>
-    </div>
-    <div class="card" onclick="location.href='section4.html'">
-      <img src="gathiywad.jpg" alt="Ayurvedic Tonics">
-      <h3>गाठीवात (Joint Pain)</h3>
-    </div>
-    <div class="card" onclick="location.href='section5.html'">
-      <img src="mudhvyat.jpg" alt="Herbal Juices">
-      <h3>मुढव्याद (Piles)</h3>
-    </div> 
-    <div class="card" onclick="location.href='section6.html'">
-      <img src="isobgul.jpg" alt="Isabgol">
-      <h3>इसबगोल (Digestive Health)</h3>
-    </div> 
-    <div class="card" onclick="location.href='section7.html'">
-      <img src="fungal.jpg" alt="Fungal Care">
-      <h3>फंगल (Fungal Infection)</h3>
-    </div>
-    <div class="card" onclick="location.href='section8.html'">
-      <img src="weigtht.jpg" alt="Weight">
-      <h3>वजन वाढवणे & कमी करणे (Weight Gain & Loss)</h3>
-    </div> 
-    <div class="card" onclick="location.href='section9.html'">
-      <img src="hair.jpg" alt="Hair Care">
-      <h3>केस गळणे (Hair Fall)</h3>
-    </div>
+    <div class="card"><img src="sandhivad.jpg"><h3>संधिवात (Arthritis)</h3></div>
+    <div class="card"><img src="manka gap.jpg"><h3>मणका गॅप (Spinal Issues)</h3></div>
+    <div class="card"><img src="sujanwad.jpg"><h3>सुजनवात (Swelling & Pain)</h3></div>
+    <div class="card"><img src="gathiywad.jpg"><h3>गाठीवात (Joint Pain)</h3></div>
+    <div class="card"><img src="mudhvyat.jpg"><h3>मुढव्याद (Piles)</h3></div> 
+    <div class="card"><img src="isobgul.jpg"><h3>इसबगोल (Digestive Health)</h3></div> 
+    <div class="card"><img src="fungal.jpg"><h3>फंगल (Fungal Infection)</h3></div>
+    <div class="card"><img src="weigtht.jpg"><h3>वजन वाढवणे & कमी करणे (Weight Gain & Loss)</h3></div> 
+    <div class="card"><img src="hair.jpg"><h3>केस गळणे (Hair Fall)</h3></div>
   </div>
 
   <!-- Benefits -->
