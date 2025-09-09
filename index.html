@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ramdev Ayurveda</title>
+  <style>
+    /* Google Fonts */
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #e8f5e9, #f1fff1);
+      color: #333;
+      text-align: center;
+      overflow-x: hidden;
+    }
+
+    /* Header */
+    header {
+      background: linear-gradient(90deg, #004d00, #007a00);
+      color: white;
+      padding: 30px 20px;
+      font-size: 34px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+      border-bottom: 5px solid #ffeb3b;
+    }
+
+    header p {
+      font-size: 16px;
+      margin: 8px 0 0;
+      font-weight: 400;
+    }
+
+    /* Intro */
+    .intro {
+      max-width: 900px;
+      margin: 30px auto;
+      font-size: 19px;
+      line-height: 1.8;
+      padding: 0 15px;
+      color: #444;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .highlight {
+      font-weight: bold;
+      color: #006400;
+    }
+
+    /* Section Headings */
+    h2 {
+      margin: 40px 0 20px;
+      font-size: 28px;
+      color: #004d00;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+    }
+
+    .dual-heading {
+      font-size: 22px;
+      color: #006600;
+      margin-bottom: 30px;
+    }
+
+    /* Grid */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      padding: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    /* Card */
+    .card {
+      background: white;
+      border-radius: 18px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+      overflow: hidden;
+      transition: all 0.4s ease;
+      cursor: pointer;
+      position: relative;
+    }
+
+    .card:hover {
+      transform: translateY(-12px) scale(1.02);
+      box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+
+    .card:hover img {
+      transform: scale(1.08);
+    }
+
+    .card h3 {
+      margin: 15px;
+      font-size: 20px;
+      color: #004d00;
+      font-weight: 600;
+    }
+
+    /* Benefits Section */
+    .benefits {
+      background: #f9fff9;
+      padding: 40px 20px;
+      margin: 50px 0;
+      box-shadow: inset 0 0 15px rgba(0,0,0,0.05);
+      border-radius: 20px;
+      animation: fadeUp 2s ease-in-out;
+    }
+
+    .benefits h2 {
+      margin-bottom: 20px;
+    }
+
+    .benefits ul {
+      list-style: none;
+      padding: 0;
+      font-size: 18px;
+      line-height: 1.8;
+      color: #333;
+      max-width: 700px;
+      margin: auto;
+      text-align: left;
+    }
+
+    .benefits ul li::before {
+      content: "✔ ";
+      color: #007a00;
+      font-weight: bold;
+    }
+
+    /* Footer */
+    footer {
+      background: linear-gradient(90deg, #004d00, #007a00);
+      color: white;
+      padding: 25px;
+      font-size: 15px;
+      line-height: 1.8;
+      margin-top: 50px;
+    }
+
+    footer strong {
+      color: #ffeb3b;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(30px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    @keyframes fadeUp {
+      from {opacity: 0; transform: translateY(50px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    🌿 Ramdev Ayurveda 🌿
+    <p>Your Trust, Our Responsibility – Serving You With Authentic Ayurvedic Care</p>
+  </header>
+
+  <!-- Intro -->
+  <div class="intro">
+    Welcome to <span class="highlight">Ramdev Ayurveda</span> – your one-stop destination for natural healing.  
+    We provide <span class="highlight">100% authentic Ayurvedic medicines</span>, prepared with ancient knowledge and trusted formulas.  
+    From <b>pills, oils, herbs, powders, and tonics</b>, we bring you holistic wellness with fast delivery right at your doorstep.  
+  </div>
+
+  <!-- Section Title -->
+  <h2>Our Ayurvedic Sections</h2>
+  <div class="dual-heading">आमचे आयुर्वेदिक विभाग</div>
+
+  <!-- Grid Cards -->
+  <div class="grid">
+    <div class="card" onclick="location.href='section1.html'">
+      <img src="sandhivad.jpg" alt="Herbal Oils">
+      <h3>संधिवात (Arthritis)</h3>
+    </div>
+    <div class="card" onclick="location.href='section2.html'">
+      <img src="manka gap.jpg" alt="Ayurvedic Pills">
+      <h3>मणका गॅप (Spinal Issues)</h3>
+    </div>
+    <div class="card" onclick="location.href='section3.html'">
+      <img src="sujanwad.jpg" alt="Herbal Powders">
+      <h3>सुजनवात (Swelling & Pain)</h3>
+    </div>
+    <div class="card" onclick="location.href='section4.html'">
+      <img src="gathiywad.jpg" alt="Ayurvedic Tonics">
+      <h3>गाठीवात (Joint Pain)</h3>
+    </div>
+    <div class="card" onclick="location.href='section5.html'">
+      <img src="mudhvyat.jpg" alt="Herbal Juices">
+      <h3>मुढव्याद (Piles)</h3>
+    </div> 
+    <div class="card" onclick="location.href='section6.html'">
+      <img src="isobgul.jpg" alt="Isabgol">
+      <h3>इसबगोल (Digestive Health)</h3>
+    </div> 
+    <div class="card" onclick="location.href='section7.html'">
+      <img src="fungal.jpg" alt="Fungal Care">
+      <h3>फंगल (Fungal Infection)</h3>
+    </div>
+    <div class="card" onclick="location.href='section8.html'">
+      <img src="weigtht.jpg" alt="Weight">
+      <h3>वजन वाढवणे & कमी करणे (Weight Gain & Loss)</h3>
+    </div> 
+    <div class="card" onclick="location.href='section9.html'">
+      <img src="hair.jpg" alt="Hair Care">
+      <h3>केस गळणे (Hair Fall)</h3>
+    </div>
+  </div>
+
+  <!-- Benefits -->
+  <div class="benefits">
+    <h2>🌟 Why Choose Ramdev Ayurveda?</h2>
+    <ul>
+      <li>100% Natural & Authentic Ayurvedic Medicines</li>
+      <li>Trusted by Hundreds of Happy Customers</li>
+      <li>Affordable Prices with Premium Quality</li>
+      <li>Doorstep Delivery via India’s Fastest Courier (DTDC)</li>
+      <li>Personal Guidance for Your Health Issues</li>
+      <li>Available on Call & WhatsApp Anytime 📞</li>
+    </ul>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    📍 <strong>Address:</strong> Jamner, District Jalgaon, Maharashtra <br>
+    📞 <strong>Contact:</strong> 9011267295 / 8767445355 <br>
+    💬 WhatsApp Support Available | 🚚 Fast Courier Service (DTDC) <br>
+    ❤️ Your Health, Our Priority – Since Generations 🌿
+  </footer>
+
+</body>
+</html>
